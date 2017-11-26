@@ -1,0 +1,2 @@
+# sangobox
+sandbox for golang
