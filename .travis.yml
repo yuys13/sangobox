@@ -6,14 +6,8 @@ go:
   - 1.7.x
   - 1.8.x
 
-before_install:
-  - go get -t -v ./...
-
-install:
-  - go get github.com/haya14busa/goverage
-
 script:
-  - goverage -coverprofile=coverage.txt
+  - ./test.sh
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
